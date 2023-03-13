@@ -22,5 +22,5 @@ jobs:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build and push Docker image
-      run: docker push ${{ secrets.DOCKER_USER }}/piperep
+      run: docker push ${{ secrets.DOCKER_USER }}/piperep:v1
    
