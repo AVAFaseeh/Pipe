@@ -1,10 +1,3 @@
-M nginx
- 
- RUN apt-get update && apt-get upgrade -y
- 
- COPY index.html /usr/share/nginx/html
- 
- EXPOSE 8080
- 
- CMD ["nginx", "-g", "daemon off;"]
-
+FROM ubuntu:20.04
+RUN apt-get -y update
+RUN apt-get -y install nginx
